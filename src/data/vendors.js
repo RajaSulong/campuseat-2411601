@@ -1,0 +1,95 @@
+const vendors = [
+  {
+    id: "R91",
+    name: "Jogja Cafe",
+    location: "Mahallah Zubair, Cafeteria",
+    openHours: "10:00 am - 10:00 pm",
+    isOpen: true,
+    menu: [
+      {
+        id: "d01",
+        name: "Ayam Gepuk Set A",
+        description: "Nasi + Sambal + Ayam Bumbu + Timun + Kubis",
+        price: 7,
+        category: "Rice",
+        available: true,
+      },
+      {
+        id: "d02",
+        name: "Ayam Gepuk Set B",
+        description:
+          "Nasi + Sambal + Ayam Bumbu + Timun + Kubis Goreng + Telur Mata",
+        price: 9,
+        category: "Rice",
+        available: true,
+      },
+      {
+        id: "d03",
+        name: "Ayam Gepuk Set C",
+        description:
+          "Nasi + Sambal + Ayam Chicken Chop + Timun + Kubis Goreng + Telur Mata",
+        price: 9,
+        category: "Rice",
+        available: true,
+      },
+      {
+        id: "d04",
+        name: "Teh O Ais",
+        description: "Add ons",
+        price: 2.5,
+        category: "Drinks",
+        available: false,
+      },
+      {
+        id: "d05",
+        name: "Sirap Ais",
+        description: "Add ons",
+        price: 2.5,
+        category: "Drinks",
+        available: false,
+      },
+      {
+        id: "d06",
+        name: "Ais Kosong",
+        description: "Add ons",
+        price: 1.0,
+        category: "Drinks",
+        available: true,
+      },
+    ],
+  },
+  {
+    id: "mee-tarik-aminah",
+    name: "Mee Tarik Aminah",
+    location: "Mahallah Aminah, Ground Floor",
+    openHours: "11:00 am - 9:00 pm",
+    isOpen: true,
+    menu: [
+      {
+        id: "BN-01",
+        name: "Mee Tarik Beef",
+        description: "Fresh Mee Tarik with Beef Slices ",
+        price: 9,
+        category: "Noodles",
+        available: true,
+      },
+      {
+        id: "BN-02",
+        name: "Beef Roti",
+        description: "Chinese dish with beef filling ",
+        price: 6,
+        category: "Side Dish",
+        available: true,
+      },
+      {
+        id: "BN-03",
+        name: "Chicken Roti",
+        description: "Chinese dish with chicken filling",
+        price: 7,
+        category: "Side Dish",
+        available: true,
+      },
+    ],
+  },
+];
+export default vendors;
