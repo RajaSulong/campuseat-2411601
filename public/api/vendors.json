@@ -1,0 +1,117 @@
+[
+  {
+    "id": "2411601-ayam-gepuk-king",
+    "name": "Ayam Gepuk King",
+    "location": "Mahallah Zubair, Cafeteria",
+    "openHours": "10:00 am - 10:00 pm",
+    "isOpen": true,
+    "menu": [
+      {
+        "id": "1601-Set-A",
+        "name": "Ayam Gepuk Set A",
+        "price": 9.9,
+        "category": "Main Dish",
+        "popular": true,
+        "available": true
+      },
+      {
+        "id": "1601-Set-B",
+        "name": "Ayam Gepuk Set B",
+        "price": 11.9,
+        "category": "Main Dish",
+        "popular": true,
+        "available": true
+      },
+      {
+        "id": "1601-Set-C",
+        "name": "Ayam Gepuk Set C",
+        "price": 14.9,
+        "category": "Main Dish",
+        "popular": true,
+        "available": true
+      },
+      {
+        "id": "1601-Telur-Mata",
+        "name": "Telur Mata",
+        "price": 2.0,
+        "category": "Add Ons",
+        "popular": true,
+        "available": true
+      },
+      {
+        "id": "1601-Kangkung-Goreng",
+        "name": "Kangkung Goreng",
+        "price": 2.0,
+        "category": "Add Ons",
+        "popular": true,
+        "available": false
+      }
+    ]
+  },
+  {
+    "id": "2411601-KPMT",
+    "name": "Kedai Makan Pantai Timur",
+    "location": "Mahallah Albuquerque, Block C",
+    "openHours": "7:00 am - 10:00 pm",
+    "isOpen": true,
+    "menu": [
+      {
+        "id": "2411601-ikan patin",
+        "name": "Ikan Patin Masak Lemak",
+        "description": "Ikan Sangkar",
+        "price": 8.5,
+        "category": "Gravy",
+        "available": true
+      },
+      {
+        "id": "2411601-fragrant rice",
+        "name": "Fragrant Rice",
+        "description": "White Rice",
+        "price": 2,
+        "category": "Rice",
+        "available": true
+      },
+      {
+        "id": "2411601-sky juice",
+        "name": "Sky Juice",
+        "description": "Coway",
+        "price": 0.5,
+        "category": "Drinks",
+        "available": true
+      },
+      {
+        "id": "2411601-coconut shake",
+        "name": "Coconut Shake",
+        "description": "Fresh Coconut, blended everyday",
+        "price": 4.5,
+        "category": "Drinks",
+        "available": false
+      }
+    ]
+  },
+  {
+    "id": "2411601-KMU",
+    "name": "Kedai Makan Masakan Utara",
+    "location": "Mahallah Aminah, Ground Floor",
+    "openHours": "8:00 am - 9:00 pm",
+    "isOpen": true,
+    "menu": [
+      {
+        "id": "2411601-nasi ayam penyet",
+        "name": "Nasi Ayam Penyet",
+        "description": "Smashed fried chicken with sambal and rice",
+        "price": 9,
+        "category": "Rice",
+        "available": true
+      },
+      {
+        "id": "2411601-air bandung",
+        "name": "Air Bandung",
+        "description": "Rose syrup with milk",
+        "price": 3,
+        "category": "Drinks",
+        "available": true
+      }
+    ]
+  }
+]
