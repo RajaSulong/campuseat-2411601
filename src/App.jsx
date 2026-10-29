@@ -16,6 +16,7 @@ function App() {
   const [cart, setCart] = useState([]); // lines of { item, qty }
   const [view, setView] = useState("menu"); // 'menu' | 'cart' | 'done'
   const [lastOrder, setLastOrder] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
   // Runs after the first render, and again whenever reloadKey changes.
   useEffect(() => {
@@ -92,6 +93,16 @@ function App() {
 
   const selectedVendor = vendors.find((v) => v.id === selectedVendorId);
 
+  // Category filter
+  const categories = ["All", "Main Dish", "Add Ons", "Drinks"];
+
+  const filteredMenu = selectedVendor
+    ? selectedVendor.menu.filter(
+        (item) =>
+          selectedCategory === "All" || item.category === selectedCategory,
+      )
+    : [];
+
   let content;
   if (view === "cart") {
     content = (
@@ -148,7 +159,20 @@ function App() {
         {selectedVendor && (
           <section>
             <h2 className="section-title">Menu: {selectedVendor.name}</h2>
-            <MenuList items={selectedVendor.menu} onAdd={handleAddToCart} />
+
+            <div className="category-filter">
+              {categories.map((cat) => (
+                <button
+                  key={cat}
+                  className={`btn ${selectedCategory === cat ? "active" : ""}`}
+                  onClick={() => setSelectedCategory(cat)}
+                >
+                  {cat}
+                </button>
+              ))}
+            </div>
+
+            <MenuList items={filteredMenu} onAdd={handleAddToCart} />
           </section>
         )}
       </>

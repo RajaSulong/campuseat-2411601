@@ -536,3 +536,22 @@ a.card:hover {
 .error {
   border-left: 4px solid #b3261e;
 }
+
+/* Category filter */
+.category-filter {
+  display: flex;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+  margin: 1rem 0 1.5rem;
+}
+.category-filter .btn {
+  width: auto;
+  padding: 0.55rem 1.4rem;
+  background: #fff;
+  color: var(--green);
+  border: 1px solid var(--green);
+}
+.category-filter .btn.active {
+  background: var(--green);
+  color: #fff;
+}
